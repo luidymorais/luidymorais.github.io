@@ -1,0 +1,15 @@
+# Site settings
+title: Luidy Naves
+email: luidymorais@gmail.com
+description: "Blog sobre desenvolvimento"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.luidynaves.com" # the base hostname & protocol for your site
+twitter_username: luidymorais
+github_username:  luidymorais
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: /:year/:month/:day/:title
+paginate: 5
+exclude: ["Readme.md", "CNAME"]
