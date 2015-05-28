@@ -1,2 +1,2 @@
-# luidymorais.github.io
-Blog sobre tecnologia
+Blog www.brunobelarmino.com.br.
+<br />Dedicado a falar sobre tecnologia e programação.
