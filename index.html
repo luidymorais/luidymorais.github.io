@@ -1,63 +1,23 @@
 ---
-layout: page
-description: "Algumas possibilidades para desenvolver"
+layout: default
 ---
-<div class="mui-row">
-  {% for post in paginator.posts %}
-  
-  <div class="mui-col-md-4"> 
-    <div class="mui-panel">
-      <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <h2 class="post-title">            {{ post.title }}
-          </h2>
-          {% if post.subtitle %}
-          <h3 class="post-subtitle">
-            {{ post.subtitle }}
-          </h3>
-          {% endif %}
-        </a>
-        <div class="mui-divider"></div>
-        <p class="post-meta">
-          <i class="fa fa-clock-o"></i>
-          {% assign m = post.date | date: "%-m" %}
-          {{ post.date | date: "%-d" }}
-          {% case m %}
-          {% when '1' %}Janeiro
-          {% when '2' %}Fevereiro
-          {% when '3' %}Março
-          {% when '4' %}Abril
-          {% when '5' %}Maio
-          {% when '6' %}Junho
-          {% when '7' %}Julho
-          {% when '8' %}Agosto
-          {% when '9' %}Setembro
-          {% when '10' %}Outubro
-          {% when '11' %}Novembro
-          {% when '12' %}Dezembro
-          {% endcase %}
-          {{ post.date | date: "%Y" }}
-          &nbsp;
-          <i class="fa fa-comment"></i>
-          <span class="disqus-comment-count" data-disqus-identifier="{{ post.disqus-identifier }}"></span>
-        </p>
-      </div>      
-    </div>
-  </div>
-  {% endfor %}
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 </div>
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Posts Recentes</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Posts Antigos &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
