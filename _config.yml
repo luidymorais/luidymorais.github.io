@@ -7,10 +7,25 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.luidynaves.com" # the base hostname & protocol for your site
 twitter_username: luidymorais
 github_username:  luidymorais
+linkedin_pagename: luidy
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: pt
+      layout: default
+  -
+    scope:
+      path: _posts/en
+    values:
+      lang: en      
+  -
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title
-paginate: 5
+paginate: 6
 exclude: ["Readme.md", "Gemfile", "Gemfile.lock", "CNAME", "_followup"]

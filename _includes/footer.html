@@ -1,12 +1,12 @@
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
+    <div class="mui-container">
+        <div class="mui-row">
+            <div class="mui-col-md-6 mui-col-md-offset-3 blog-list-inline">
+                <ul >
                     <li>
                         <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-2x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                             </span>
@@ -15,7 +15,7 @@
                     {% if site.twitter_username %}
                     <li>
                         <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-2x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                             </span>
@@ -25,7 +25,7 @@
                     {% if site.facebook_username %}
                     <li>
                         <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-2x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                             </span>
@@ -35,9 +35,19 @@
                     {% if site.github_username %}
                     <li>
                         <a href="https://github.com/{{ site.github_username }}" target="_blank">
-                            <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-2x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <li>
+                        <a href="https://br.linkedin.com/in/{{ site.linkedin_pagename }}" target="_blank">
+                            <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -49,12 +59,26 @@
     </div>
 </footer>
 
-<!-- jQuery -->
-<script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ "/js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/mui.min.js " | prepend: site.baseurl }}"></script>
+<script async src="{{ "/js/analytics.js " | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+                
+                var applyColorCards = function (cards) {
+                    for (var i = 0; i < cards.length; i++) {
+                        
+                        cards[i].style.background = randomColor();                                    
+                     }
+                }                
+
+                var randomColor = function () {
+                    var color = '#'; // hexadecimal starting symbol
+                    var letters = ['448AFF','FF5252','2196F3','FFEA00','FF8F00','F4511E','9E9E9E','78909C', '009688', '0288D1', '0097A7', '757575', 'EF5350', 'BA68C8']; //Set your colors here
+                    color += letters[Math.floor(Math.random() * letters.length)];
+
+                    return color;
+                }
+
+                var cards = document.getElementsByClassName('bottom-card');
+
+                if (cards.length > 0) { applyColorCards(cards) };                
+</script>

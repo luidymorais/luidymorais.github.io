@@ -3,27 +3,62 @@ layout: default
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="mui-content">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <hr class="small">
-                    <span class="subheading">{{ page.description }}</span>
+<header class="header-image">    
+        <div class="mui-container" >
+            <div class="mui-align-top mui-text-right">
+            <a class="" href="{{ site.baseurl }}/">                
+                <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                            </span>
+            </a>            
+            <a href="{{ '/sobre' | prepend: site.baseurl }}">
+                        <span class="fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
+                            </span>
+                    </a>
+            </div>            
+            <div class="title">
+                <div class="circle-photo circle-photo-title">
                 </div>
+                <div class="title-text">
+                    <div class="title-text-description">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</div>                                    
+                    {% if page.subtitle %}
+                    <div class="subtitle-text">
+                        <p>{{ page.subtitle }}</p>
+                    {% endif %}
+                    <span class="meta">
+                        {% assign m = page.date | date: "%-m" %}
+                        {{ page.date | date: "%-d" }}
+                        {% case m %}
+                          {% when '1' %}Janeiro
+                          {% when '2' %}Fevereiro
+                          {% when '3' %}Março
+                          {% when '4' %}Abril
+                          {% when '5' %}Maio
+                          {% when '6' %}Junho
+                          {% when '7' %}Julho
+                          {% when '8' %}Agosto
+                          {% when '9' %}Setembro
+                          {% when '10' %}Outubro
+                          {% when '11' %}Novembro
+                          {% when '12' %}Dezembro
+                        {% endcase %}
+                        {{ page.date | date: "%Y" }}
+                    </span>
+                    </div>
+                </div>
+                            
             </div>
-        </div>
-    </div>
+        </div>    
 </header>
 
 <!-- Main Content -->
-<div class="container">
-	<div >
-		<div class=>
+<div class="mui-container containerMargin">
+	<div>
+		<div >
 			{{ content }}
 		</div>
 	</div>
 </div>
-
-<hr>
