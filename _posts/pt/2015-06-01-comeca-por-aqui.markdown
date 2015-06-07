@@ -10,8 +10,8 @@ disqus-identifier: "2015-06-05-comeca-por-aqui"
 
 {% include post-share.html %}
 
-
-<p>Olá,</p>
+<article>
+<p>Olá!</p>
 
 
 <p>A partir de hoje o meu blog que antes estava no wordpress, será migrado para o meu domínio e utilizarei o github pages para armazená-lo por questões de uma maior liberdade.</p>
@@ -24,7 +24,7 @@ disqus-identifier: "2015-06-05-comeca-por-aqui"
 
 
 <p>É isso ae logo virá o primeiro post, abraços.</p>
-
+</article>
 
 {% include post-share.html %}
 

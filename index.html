@@ -10,11 +10,11 @@ subtitle: "Um pouco do meu conhecimento tecnológico"
     <div class="blog-card mui-z3">
       <div class="blog-post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
-          <p class="blog-card-title">{{ post.title }}</p>
+          <div class="blog-card-title">{{ post.title }}</div>
           
           {% if post.subtitle %}
           
-          <p class="blog-card-subtitle">{{ post.subtitle }}</p>
+          <div class="blog-card-subtitle">{{ post.subtitle }}</div>
           
           {% endif %}
         </a>
