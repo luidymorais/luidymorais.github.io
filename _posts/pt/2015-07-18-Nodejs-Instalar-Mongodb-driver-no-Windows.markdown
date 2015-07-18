@@ -27,7 +27,7 @@ disqus-identifier: "2015-07-18-Nodejs-Instalar-Mongodb-driver-no-Windows"
 
 <p>
 	<a href="{{ site.baseurl }}/img/PostNodejsMongoDbDriver.PNG" target="_blank" alt="Clique na imagem para vê-la em tamanho real">
-		<img src="../../../../img/PostNodejsMongoDbDriver.PNG" width="1000em" height="300em" >
+		<img src="../../../../img/PostNodejsMongoDbDriver.PNG" width="320vw" height="40vh" >
 	</a>
 </p>
 
