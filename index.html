@@ -6,7 +6,7 @@ subtitle: "Um pouco do meu conhecimento tecnológico"
   {% assign posts=paginator.posts | where:"lang", page.lang | where:"type", posts %}
   {% for post in posts %}
   
-  <div class="mui-col-md-12"> 
+  <div class="mui-col-md-6"> 
     <div class="blog-card mui-z3">
       <div class="blog-post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">

@@ -2,9 +2,9 @@
 layout: page
 title:  "Node.js: Instalar MongoDb Driver no Windows"
 subtitle:   "Incluindo um parâmetro para instalação do MongoDb Driver"
-date:       2015-06-07 10:30:00
+date:       2015-07-18 18:10:00
 author:     "Luidy M. Naves"
-disqus-identifier: "2015-06-07-Nodejs-Instalar-Mongodb-driver-no-Windows"
+disqus-identifier: "2015-07-18-Nodejs-Instalar-Mongodb-driver-no-Windows"
 ---
 
 
@@ -26,8 +26,8 @@ disqus-identifier: "2015-06-07-Nodejs-Instalar-Mongodb-driver-no-Windows"
 <p>Voltando ao nosso caso, o node-gyp por padrão hoje procura pelo MSBuild do Visual Studio 2010 que contenha o Visual C++ para realizar a compilação c++ da qual ele necessita. Caso ele não encontre o compilador c++ vai ocorrer um erro parecido com o da imagem abaixo.</p>
 
 <p>
-	<a href="{{ site.baseurl }}/img/PostNodejsMongoDbDriver.png" target="_blank" alt="Clique na imagem para vê-la em tamanho real">
-		<img src="../../../../img/PostNodejsMongoDbDriver.png" width="1000em" height="300em" >
+	<a href="{{ site.baseurl }}/img/PostNodejsMongoDbDriver.PNG" target="_blank" alt="Clique na imagem para vê-la em tamanho real">
+		<img src="../../../../img/PostNodejsMongoDbDriver.PNG" width="1000em" height="300em" >
 	</a>
 </p>
 
@@ -48,6 +48,7 @@ disqus-identifier: "2015-06-07-Nodejs-Instalar-Mongodb-driver-no-Windows"
 
 <p>Lembrando que para quem não tem nenhum Visual Studio pode baixar uma versão express qual é gratuita.</p>
 
+<p>OBS.: Existe um sistema de fallback no Node.js que mesmo não executando a compilação nativa ele permite que o pacote seja utilizado. Lembrando que existem outros pacotes que também utilizam da mesma compilação.</p>
 
 <p>Até a próxima!</p>
 </article>
@@ -57,7 +58,7 @@ disqus-identifier: "2015-06-07-Nodejs-Instalar-Mongodb-driver-no-Windows"
 
 <div class="blog-comments">
 <script type="text/javascript">
-var disqus_identifier = "2015-06-07-Nodejs-Instalar-Mongodb-driver-no-Windows";
+var disqus_identifier = "2015-07-18-Nodejs-Instalar-Mongodb-driver-no-Windows";
 var disqus_title = 'Node.js: Instalar MongoDb Driver no Windows';
 </script>
 
