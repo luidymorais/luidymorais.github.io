@@ -35,7 +35,7 @@ article {
 }
 
 .title-text {	
-	padding-top: 12vh;	
+	padding-top: 15vh;	
 }
 
 .title-text-description {
@@ -46,15 +46,15 @@ article {
 
 
 .subtitle-text {
-	padding-left: 0.2em;
+	padding-left: 1vh;
 }
 
 .subtitle-text p {
-	font-size: 1.5em;	
+	font-size: 2vh;	
 }
 
 .subtitle-text span {
-	font-size: 1em;	
+	font-size: 1.5vh;	
 }
 .container-margin {
 	margin-top: 6em;
@@ -107,7 +107,7 @@ article {
 
 .blog-card-title {
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 3vh;
 }
 
 .blog-list-inline {
