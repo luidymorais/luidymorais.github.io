@@ -1,32 +1,88 @@
-# Site settings
-title: Luidy Naves
-header-img: img/home.jpg
-email: luidymorais@gmail.com
-subtitle: "Um pouco do meu conhecimento tecnológico"
-description: "Um pouco do meu conhecimento tecnológico"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.luidynaves.com" # the base hostname & protocol for your site
-twitter_username: luidymorais
-github_username:  luidymorais
-linkedin_pagename: luidy
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: pt
-      layout: default
-  -
-    scope:
-      path: _posts/en
-    values:
-      lang: en      
-  -
+# Build settings
+gems:
+  - jemoji
+  - jekyll-paginate
+
+# Site settings
+title:
+  pt: Luidy Naves
+  en: Luidy Naves
+email: luidymorais@gmail.com
+description:
+  pt: It is not necessary to change. Survival is not mandatory. (W. Edwards Deming)
+  en: It is not necessary to change. Survival is not mandatory. (W. Edwards Deming)  
+index:
+  pt:
+  en: index_en.html   
+feed:  
+  pt: /feed.xml
+  en: /flux.xml
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://luidynaves.com" # the base hostname & protocol for your site
+twitter_username: luidynaves
+github_username:  luidynaves
+
+majorpage:
+  pt: Voltar
+  en: Back
+
+feedtext:
+  pt: Inscreva-se!
+  en: Subscribe!
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
-permalink: /:year/:month/:day/:title
-paginate: 6
-exclude: ["Readme.md", "Gemfile", "Gemfile.lock", "CNAME", "_followup"]
+
+#blog logo
+#logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/photo_1462273034737.jpg"
+
+name: 'Luidy Naves'
+author: 'Luidy Naves'
+author_image: "/assets/images/author.jpg"
+
+#paginate: 5
+
+#used to display twitter cards
+twitter_handle: '@luidynaves'
+
+#fill in disqus shortname to use disqus
+disqus: luidynaves
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/luidynaves
+    desc: 
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	github
+    url:	https://github.com/luidynaves
+    desc:	
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:

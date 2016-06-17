@@ -1,14 +1,14 @@
 ---
-layout: page
+layout: post
 title:  "Começa por aqui..."
 subtitle:   "Chega mais..."
 date:       2015-06-05 23:00:00
 author:     "Luidy M. Naves"
 disqus-identifier: "2015-06-05-comeca-por-aqui"
+ref: welcome
+lang: pt
 ---
 
-
-{% include post-share.html %}
 
 <article>
 <p>Olá!</p>
@@ -25,8 +25,6 @@ disqus-identifier: "2015-06-05-comeca-por-aqui"
 
 <p>É isso ae logo virá o primeiro post, abraços.</p>
 </article>
-
-{% include post-share.html %}
 
 
 <div class="blog-comments">

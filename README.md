@@ -1,1 +1,0 @@
-Blog www.luidynaves.com

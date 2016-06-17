@@ -1,67 +1,59 @@
 ---
-layout: default
 ---
-
-<!-- Page Header -->
-<header class="header-image">    
-        <div class="mui-container" >
-            <div class="mui-align-top mui-text-right">
-            <a class="" href="{{ site.baseurl }}/">                
-                <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-                            </span>
-            </a>            
-            <a href="{{ '/sobre' | prepend: site.baseurl }}">
-                        <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-info fa-stack-1x fa-inverse"></i>
-                            </span>
-                    </a>
-            </div>            
-            <div class="mui-align-middle mui-text-left circle">
-            <div class="circle-photo circle-photo-title">
-                                </div>
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body itemscope itemtype="http://schema.org/Article">
+    {% include header.html %}
+    <main class="content" role="main">
+      <article class="post">
+        {% if page.image %}
+        <div class="article-image">
+          <div class="post-image-image" style="background-image: url({% if page.image %}{{ page.image }}{% endif %})">
+            Article Image
+          </div>
+          <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
             </div>
-            <div class="title mui-align-middle mui-text-center">
-                
-                <div class="title-text">
-                    <div class="title-text-description">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</div>                                    
-                    {% if page.subtitle %}
-                    <div class="subtitle-text">
-                        <p>{{ page.subtitle }}</p>
-                    {% endif %}
-                    <span class="meta">
-                        {% assign m = page.date | date: "%-m" %}
-                        {{ page.date | date: "%-d" }}
-                        {% case m %}
-                          {% when '1' %}Janeiro
-                          {% when '2' %}Fevereiro
-                          {% when '3' %}Março
-                          {% when '4' %}Abril
-                          {% when '5' %}Maio
-                          {% when '6' %}Junho
-                          {% when '7' %}Julho
-                          {% when '8' %}Agosto
-                          {% when '9' %}Setembro
-                          {% when '10' %}Outubro
-                          {% when '11' %}Novembro
-                          {% when '12' %}Dezembro
-                        {% endcase %}
-                        {{ page.date | date: "%Y" }}
-                    </span>
-                    </div>
-                </div>
-                            
+            <div style="text-align:center">
+              <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
             </div>
-        </div>    
-</header>
+          </div>
+        </div>
+        {% else %}
+        <div class="noarticleimage">
+          <div class="post-meta">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div class="cf post-meta-text">
+              <div class="author-image" style="background-image: url({{ page.author_image }})">Blog Logo</div>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</h4>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        {% endif %}
+        <section class="post-content">
+          <a name="topofpage"></a>
+          {{content}}
+        </section>
+      </article>
+    </main>
+    <div class="bottom-closer">
+      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover }})"{% endif %}>
+        Image
+      </div>
+      <div class="inner">
+        <h1 class="blog-title">{{ site.title[page.lang] }}</h1>
+        <h2 class="blog-description">{{ site.description[page.lang] }}</h2>
+        <a href="/" class="btn">{{ site.majorpage[page.lang] }}</a>
+      </div>
+    </div>
+    {% include javascripts.html %}
+  </body>
+</html>
 
-<!-- Main Content -->
-<div class="mui-container container-margin">
-	<div>
-		<div >
-			{{ content }}
-		</div>
-	</div>
-</div>

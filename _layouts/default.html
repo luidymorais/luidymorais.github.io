@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
-{% include head.html %}
+  {% include head.html %}
 
-<body>
+  <body>
 
-    {% include nav.html %}
+    {% include header.html %}
 
-    {{ content }}
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
 
     {% include footer.html %}
+    {% include javascripts.html %}
 
-    {% include comment-count.html %}
-
-</body>
+  </body>
 
 </html>
