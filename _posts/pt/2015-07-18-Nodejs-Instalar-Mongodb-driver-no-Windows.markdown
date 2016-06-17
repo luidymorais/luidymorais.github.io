@@ -26,7 +26,7 @@ Voltando ao nosso caso, o node-gyp por padrão hoje procura pelo MSBuild do Visu
 
 
 	
-		[[../../../../img/PostNodejsMongoDbDriver.PNG]]
+![Instalando MongoDb Driver](/assets/article_images/2015-07-18-Nodejs-mongodb-driver-no-windows/PostNodejsMongoDbDriver.png)
 	
 
 
@@ -36,7 +36,7 @@ Legal, mas e caso tenha instalado o Visual Studio 2012 ou 2013 e não tenha o 20
 O parâmetro a ser enviado é o <em>--msvs_version={versão do visual stuio}</em>, vamos ver como ficaria caso tenha a versão 2013 instalada.
 
 {% highlight shell %}
-	npm install --msvs_version=2013 mongodb
+npm install --msvs_version=2013 mongodb
 {% endhighlight %}
 
 

@@ -14,7 +14,7 @@ Today I've needed access an external ssh conection. I'm a new Mac OS user and wh
 The first step I've installed the brew, and I opened the terminal and I've installed the putty.
 
 {% highlight shell %}
-	brew install putty
+brew install putty
 {% endhighlight %}
 
 The next, I've needed the pem file, when you wanna access the AWS EC2 Server, you need of the pem file. This file is generated from AWS Panel.
@@ -22,19 +22,19 @@ The next, I've needed the pem file, when you wanna access the AWS EC2 Server, yo
 I have the ppk file, but the puttygen generates the pem file based on a ppk file.
 
 {% highlight shell %}
-	puttygen myprivatekey.ppk -O private-openssh -o myprivatekey.pem
+puttygen myprivatekey.ppk -O private-openssh -o myprivatekey.pem
 {% endhighlight %}
 
 Great... now we have the pem file, let's connect.
 
 {% highlight shell %}
-	ssh -i myprivatekey.pem myuser@myserver.com
+ssh -i myprivatekey.pem myuser@myserver.com
 {% endhighlight %}  
 
 The last thing I wanna create the tunnel through my machine and ssh connection.
 
 {% highlight shell %}
-	ssh -i myprivatekey.pem myuser@myserver.com -L:MyMachinePort:ExternalAddress:ExternalPort
+ssh -i myprivatekey.pem myuser@myserver.com -L:MyMachinePort:ExternalAddress:ExternalPort
 {% endhighlight %}
 
 Now if I wanna create too tunnels, I can add others -L parameters.

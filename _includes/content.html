@@ -11,13 +11,13 @@
     <h1 class="blog-title">{{ site.title[page.lang] }}</h1>
     <h2 class="blog-description">{{ site.description[page.lang] }}</h2>
     <div class="custom-links">
-      <div class="wrapper" style="text-align: center; line-height: 2em">
+      <!--<div class="wrapper" style="text-align: center; line-height: 2em">
         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
         {% for post in posts %} <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
         <span>&nbsp;|&nbsp;</span>
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %} <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a> <span>&nbsp;|&nbsp;</span>{% endfor %}
-      </div>
+      </div>-->
 
       {% for social in site.social %}
         {% if social.url %}
