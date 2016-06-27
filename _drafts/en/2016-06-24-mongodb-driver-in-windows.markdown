@@ -22,6 +22,6 @@ Sometimes node-gyp doesn't find the C++ compiler, so we need put a msvs_version 
 npm install --msvs_version=2013 mongodb
 {% endhighlight %}
 
-Almost all addons has a fallback instalation, instead of compile natively they can run like a javascript library.
+Almost all add-ons has a fallback instalation, instead of compile natively they can run like a javascript library.
 
 See ya...
