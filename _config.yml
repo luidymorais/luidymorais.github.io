@@ -66,12 +66,12 @@ social:
     share_title: ?text=
     share_link: "&amp;url="
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  - icon: facebook
+    url:
+    desc:
+    share_url: https://www.facebook.com/sharer.php
+    share_title: ?t=
+    share_link: "&amp;u="
 
   - icon:	github
     url:	https://github.com/luidynaves
@@ -80,6 +80,12 @@ social:
     share_title:
     share_link:
 
+  - icon:	linkedin
+    url:	https://br.linkedin.com/in/luidy
+    desc:	
+    share_url: https://www.linkedin.com/shareArticle
+    share_title:
+    share_link: "?url="
 #  - icon:	google-plus
 #    url:	https://google.com/???
 #    desc:	Add me on google+

@@ -2,7 +2,7 @@
 layout: post
 title:  "SSH in Mac OS terminal"
 ref: sshMacOSTerminal
-date:   2016-06-16 07:03:44 -0300
+date:   2016-07-15 07:03:44 -0300
 lang: en
 ---
 
