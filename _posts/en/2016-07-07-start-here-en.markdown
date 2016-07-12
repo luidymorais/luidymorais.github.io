@@ -10,13 +10,13 @@ image: /assets/article_images/2016-07-07-start-write-in-english/ocean_avenue_mia
 Hi,
 
 
-I've thought to write some posts in english too. Why english? I'm a Brazilian man!
+I've thought to write some posts in english too. Why english if I'm a brazilian man?
 
-I wanna practice my knowledge in english and share a little bit of my IT experience among more people.
+I wanna practice my knowledge in english and share a little bit of my IT experience among people.
 
-I live in Brazil and I've learned the english's tricks and I haven't had opportunities to practice them, I believe I can do this writing.
+I live in Brazil and I've learned the english and I haven't have opportunity to practice them, I believe I can do this by writing.
 
-Probably I'll make mistakes and if you see one, you don't hesitate, please, tell me.
+Probably I'll make mistakes and if you see one, don't hesitate on telling me.
 
 
 See ya...
