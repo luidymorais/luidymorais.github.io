@@ -14,7 +14,7 @@ I've thought to write some posts in english too. Why english if I'm a brazilian 
 
 I wanna practice my knowledge in english and share a little bit of my IT experience among people.
 
-I live in Brazil and I've learned the english and I haven't have opportunity to practice them, I believe I can do this by writing.
+I live in Brazil and I've learned the english and I haven't have the opportunity to practice them, I believe I can do this by writing.
 
 Probably I'll make mistakes and if you see one, don't hesitate on telling me.
 
