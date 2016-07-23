@@ -3,6 +3,7 @@ layout: post
 title:  "SSH no terminal Mac OS"
 ref: sshMacOSTerminal
 date:   2016-07-22 07:03:44 -0300
+image: /assets/article_images/2016-07-22-ssh-in-mac-os/home.jpg
 lang: pt
 ---
 
