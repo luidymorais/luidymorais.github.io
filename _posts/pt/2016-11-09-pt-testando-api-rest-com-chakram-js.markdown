@@ -93,6 +93,14 @@ Na linha 15 verificamos se a API conseguiu nos responder com sucesso aguardando 
 
 Para finalizar na linha 16 verificamos se o retorno do campo localidade é igual a cidade de Boa Esperança, já que passamos o cep 37170000 como parâmetro.
 
+Verificando se o teste criado está funcionando rode o seguinte código na linha de comando:
+
+{% highlight shell %}
+node_modules/mocha/bin/mocha zipTest.js
+{% endhighlight %}
+
+OBS.: Caso estiver usando windows inverter as barras do caminho para o mocha.
+
 Nesse post mostrei como iniciar os testes usando o Chakram Js, no próximo abordarei uma estrutura de como montar esses testes usando arquivos de configuração e reaproveitando várias chamadas de API.
 
 Abaixo segue as referências assim como o link do código exemplificado acima:
