@@ -97,6 +97,7 @@ Nesse post mostrei como iniciar os testes usando o Chakram Js, no próximo abord
 
 Abaixo segue as referências assim como o link do código exemplificado acima:
 
+* [https://github.com/luidynaves/testAPI](https://github.com/luidynaves/testAPI){:target="_blank"}
 * [https://github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows){:target="_blank"}
 * [https://github.com/creationix/nvm](https://github.com/creationix/nvm){:target="_blank"}
 * [https://sourceforge.net/projects/conemu/](https://sourceforge.net/projects/conemu/){:target="_blank"}
